@@ -36,11 +36,11 @@ export function Footer() {
       </h2>
       <div className="mx-auto max-w-[1440px] px-[20px] pb-[64px] pt-[40px] md:px-[40px] lg:px-[124px]">
         <div className="flex items-center justify-center gap-[15px]">
-          <Brush />
-          <Link to="/" aria-label={`${brand.nameBold} ${brand.nameLight} home`} className="shrink-0 px-[15px]">
+          <span className="hidden sm:block"><Brush /></span>
+          <Link to="/" aria-label={`${brand.nameBold} ${brand.nameLight} home`} className="shrink-0 px-[10px] sm:px-[15px]">
             <Wordmark inverted size="lg" />
           </Link>
-          <Brush flip />
+          <span className="hidden sm:block"><Brush flip /></span>
         </div>
 
         <div className="mt-[120px] grid gap-y-[48px] max-lg:mt-[70px] lg:grid-cols-[280px_1fr] lg:gap-x-[30px]">

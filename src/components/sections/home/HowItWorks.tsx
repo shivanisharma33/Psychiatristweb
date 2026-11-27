@@ -33,7 +33,7 @@ export function HowItWorks() {
           </p>
         </Reveal>
 
-        <div className="relative mx-auto mt-[40px] max-md:mt-[30px]" style={{ maxWidth: viewport }}>
+        <div className="relative mx-auto mt-[40px] w-full max-w-full overflow-hidden max-md:mt-[30px]" style={{ maxWidth: viewport }}>
           <button
             type="button"
             onClick={prev}

@@ -79,7 +79,7 @@ export function CareAreasSection() {
         ))}
 
         {/* Category tabs */}
-        <div role="tablist" aria-label="Care categories" className="mx-auto mt-[40px] flex max-w-[820px] flex-wrap justify-center gap-[12px]">
+        <div role="tablist" aria-label="Care categories" className="mx-auto mt-[32px] flex max-w-[820px] flex-wrap justify-center gap-[8px] sm:gap-[12px]">
           {careAreas.categories.map((cat) => {
             const selected = cat.id === activeCategory.id;
             return (
@@ -91,7 +91,7 @@ export function CareAreasSection() {
                 aria-controls={`panel-${cat.id}`}
                 onClick={() => setTabState({ id: cat.id, hash })}
                 className={cn(
-                  'rounded-full px-[22px] py-[11px] text-[15.5px] font-medium transition-colors duration-200 cursor-pointer',
+                  'rounded-full px-[16px] py-[9px] text-[14px] font-medium transition-colors duration-200 cursor-pointer sm:px-[22px] sm:py-[11px] sm:text-[15.5px]',
                   selected
                     ? 'bg-ink text-white'
                     : 'bg-white text-ink-700 hover:bg-sand'

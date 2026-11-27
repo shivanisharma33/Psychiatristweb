@@ -70,17 +70,17 @@ export function TestimonialSlider({
               animate={{ opacity: 1, x: 0 }}
               exit={reduce ? undefined : { opacity: 0, x: -40 }}
               transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
-              className="flex items-center gap-[70px] max-md:flex-col max-md:gap-[20px]"
+              className="flex items-center gap-[70px] max-md:flex-col max-md:gap-[16px]"
               aria-roledescription="slide"
               aria-label={`${index + 1} of ${items.length}`}
             >
-              <div className="h-[130px] w-[120px] shrink-0 overflow-hidden rounded-full">
+              <div className="size-[90px] shrink-0 overflow-hidden rounded-full sm:size-[110px] md:size-[120px]">
                 <SmartImage slot={t.avatar} tone={tone === 'light' ? 'warm' : 'grey'} sizes="120px" />
               </div>
               <blockquote className="max-w-[864px] max-md:text-center">
-                <p className={cn('text-[21px] leading-[25.2px]', tone === 'light' ? 'text-ink-500' : 'text-ink')}>
+                <p className={cn('text-[17px] leading-[25px] sm:text-[19px] sm:leading-[27px] md:text-[21px] md:leading-[25.2px]', tone === 'light' ? 'text-ink-500' : 'text-ink')}>
                   {t.quote}
-                  {t.author && <span> — {t.author}</span>}
+                  {t.author && <span className="block mt-1 font-semibold text-[15px] sm:inline sm:mt-0"> — {t.author}</span>}
                 </p>
               </blockquote>
             </motion.figure>

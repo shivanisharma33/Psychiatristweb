@@ -198,7 +198,7 @@ export function Navbar() {
             animate={{ height: 'calc(100dvh - 64px)' }}
             exit={reduce ? undefined : { height: 0 }}
             transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
-            className="overflow-y-auto border-t border-[#eee] bg-white lg:hidden"
+            className="flex flex-col justify-between overflow-y-auto border-t border-[#eee] bg-white lg:hidden"
           >
             <ul className="px-[20px] py-[12px]">
               {mainNav.map((item) => {
@@ -237,6 +237,24 @@ export function Navbar() {
                 );
               })}
             </ul>
+
+            {/* Mobile Drawer Bottom Quick Action */}
+            <div className="border-t border-[#f0f0f0] bg-[#faf8f5] p-[20px] space-y-3">
+              <Button
+                variant="nav"
+                to={navCta.to}
+                className="w-full justify-center !h-[48px] !text-[16px]"
+              >
+                {navCta.label}
+              </Button>
+              <div className="flex items-center justify-center gap-4 text-[13px] text-ink/70">
+                <a href="tel:+919996842994" className="font-semibold text-ink hover:text-accent">
+                  📞 +91 99968 42994
+                </a>
+                <span>·</span>
+                <span>Ashok Hospital</span>
+              </div>
+            </div>
           </motion.div>
         )}
       </AnimatePresence>

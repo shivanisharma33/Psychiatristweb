@@ -15,7 +15,7 @@ export function Categories() {
             {categories.title}
           </h2>
         </Reveal>
-        <ul className="mx-auto mt-[52px] grid max-w-[948px] grid-cols-2 gap-x-[32px] gap-y-[40px] max-md:mt-[40px] max-md:gap-x-[32px] md:grid-cols-4 md:gap-x-[49px]">
+        <ul className="mx-auto mt-[40px] grid max-w-[948px] grid-cols-2 gap-x-[16px] gap-y-[28px] sm:gap-x-[32px] sm:gap-y-[40px] md:mt-[52px] md:grid-cols-4 md:gap-x-[49px]">
           {categories.items.map((c, i) => (
             <Reveal as="li" key={c.label} delay={i * 0.08}>
               <Link to={c.to} className="group block text-center">

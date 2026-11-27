@@ -18,7 +18,7 @@ export function Different() {
             {different.title}
           </h2>
         </Reveal>
-        <ul className="mx-auto mt-[58px] grid max-w-[1056px] grid-cols-2 gap-x-[39px] gap-y-[50px] sm:grid-cols-3 lg:grid-cols-5">
+        <ul className="mx-auto mt-[40px] grid max-w-[1056px] grid-cols-2 gap-x-[16px] gap-y-[30px] sm:gap-x-[32px] sm:gap-y-[44px] md:mt-[58px] sm:grid-cols-3 lg:grid-cols-5">
           {different.items.map((d, i) => {
             const Icon = icons[d.icon];
             return (

@@ -18,7 +18,7 @@ function RotatingScript({ words }: { words: string[] }) {
   }, [reduce, words.length]);
 
   return (
-    <span className="relative block h-[136px] w-[278px] max-md:mx-auto max-md:h-[110px] max-md:w-[224px]" aria-live="off">
+    <span className="relative block h-[136px] w-[278px] max-md:mx-auto max-md:h-[105px] max-md:w-[224px] max-sm:h-[84px] max-sm:w-[195px]" aria-live="off">
       <span className="sr-only">{words.join(', ')}</span>
       <AnimatePresence mode="wait">
         <motion.span
@@ -28,7 +28,7 @@ function RotatingScript({ words }: { words: string[] }) {
           animate={{ clipPath: 'inset(0 0% 0 0)', opacity: 1 }}
           exit={reduce ? undefined : { opacity: 0 }}
           transition={{ clipPath: { duration: 1.3, ease: 'easeInOut' }, opacity: { duration: 0.35 } }}
-          className="absolute inset-x-0 bottom-[8px] block text-center font-script text-[88px] leading-[1] text-white max-md:text-[72px]"
+          className="absolute inset-x-0 bottom-[8px] block text-center font-script text-[88px] leading-[1] text-white max-md:text-[70px] max-sm:text-[54px]"
         >
           {words[i]}
         </motion.span>
@@ -49,16 +49,16 @@ export function HomeHero() {
       <div className="mx-auto max-w-[1440px] px-[20px] pt-[40px] md:px-[60px] lg:px-[143px] lg:pt-[64px]">
         <div className="grid items-start gap-[36px] xl:grid-cols-[464px_1fr] xl:gap-[60px]">
           <Reveal y={40} className="max-xl:mx-auto max-xl:max-w-[560px] max-xl:w-full max-md:text-center">
-            <h1 id="home-hero-title" className="font-serif text-[57.4px] leading-[68.88px] tracking-[-0.02em] text-ink max-md:text-[44px] max-md:leading-[52px]">
+            <h1 id="home-hero-title" className="font-serif text-[57.4px] leading-[68.88px] tracking-[-0.02em] text-ink max-md:text-[42px] max-md:leading-[50px] max-sm:text-[34px] max-sm:leading-[42px]">
               {hero.titleLine}
               <RotatingScript words={hero.rotatingWords} />
             </h1>
-            <p className="mt-[20px] text-[19.6px] leading-[27px] text-ink/60 max-md:text-[17px] max-md:leading-[24px]">{hero.body}</p>
+            <p className="mt-[20px] text-[19.6px] leading-[27px] text-ink/60 max-md:text-[16.5px] max-md:leading-[24px] max-sm:text-[15.5px]">{hero.body}</p>
             <EmailCapture variant="hero" placeholder={hero.emailPlaceholder} cta={hero.cta} source="home-hero" className="mt-[24px]" />
           </Reveal>
 
           {/* Photo collage with enhanced animations */}
-          <div className="relative mx-auto aspect-[607/493] w-full max-w-[607px] xl:mt-[-11px]">
+          <div className="relative mx-auto aspect-[607/493] w-full max-w-[607px] max-md:max-w-[420px] max-sm:max-w-[320px] xl:mt-[-11px]">
             <motion.div
               initial={{ opacity: 0, y: 30, rotate: -2 }}
               animate={{ opacity: 1, y: 0, rotate: 0 }}
