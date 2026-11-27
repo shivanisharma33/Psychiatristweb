@@ -38,26 +38,35 @@ export const testimonials: Testimonial[] = [
   },
 ];
 
-// To add a real photo: put it in assets-src/photos/, run `npm run images`, set src to its file name and alt to the person's name.
-const portrait = (n: number) => ({ src: `/images/illustrations/team-${n}.svg`, alt: '', hint: `Team portrait ${n} · square, B&W` });
-
 export const doctor = {
-  name: 'Dr. Abhinav',
-  credentials: 'MBBS, MD (Psychiatry)',
-  role: 'Consultant Psychiatrist',
+  name: 'Dr. Abhinav Dhami',
+  credentials: 'MD Psychiatry',
+  role: 'Psychiatrist & Consultant',
   location: 'Ashok Hospital, Near Civil Hospital, Garhshankar, Punjab 144527',
   phone: '+91 99968 42994',
   hospitalPhone: '+91 98140 73717',
   fatherInfo: 'Son of Dr. Ashok (Senior Surgeon) & Mother (General Practitioner)',
-  bio: 'Born into a dedicated family of healthcare professionals — with his father, Dr. Ashok, an accomplished senior surgeon, and his mother, an esteemed general physician — Dr. Abhinav brings a legacy of clinical excellence and warmth to psychiatric care at Ashok Hospital.',
-  photo: portrait(1),
+  experience: '10 Years Clinical Experience',
+  previousRole: 'Former Assistant Professor',
+  bio: 'Dr. Abhinav Dhami is a psychiatrist with 10 years of clinical experience in mental health and psychiatry. Having previously served as an Assistant Professor, he brings clinical experience and a commitment to evidence-based psychiatric care. His approach combines evidence-based treatment, compassionate care and a deeper understanding of the complexities of the human mind.',
+  bioParagraphs: [
+    'Dr. Abhinav Dhami is a psychiatrist with 10 years of clinical experience in mental health and psychiatry. Having previously served as an Assistant Professor, he brings clinical experience and a commitment to evidence-based psychiatric care.',
+    'His approach combines evidence-based treatment, compassionate care and a deeper understanding of the complexities of the human mind. Beyond the treatment of psychiatric disorders, he is also interested in cognitive optimization, emotional resilience and enhancing overall psychological performance.',
+    'Dr. Dhami believes in helping individuals not only overcome mental health challenges, but also develop greater clarity, emotional balance, resilience and the mental capacity to navigate life more effectively. His approach emphasizes personalized care, scientific evidence and a judgement-free environment where patients feel heard and understood.',
+  ],
+  photo: {
+    src: 'dr-abhinav-dhami',
+    alt: 'Dr. Abhinav Dhami | MD Psychiatry at Ashok Hospital',
+    hint: 'Dr. Abhinav Dhami · Portrait',
+    position: 'center top',
+  },
   details: [
-    { label: 'Medical qualifications', value: 'MBBS, MD (Psychiatry)' },
-    { label: 'Family legacy', value: 'Father: Dr. Ashok (Surgeon), Mother: General Doctor' },
-    { label: 'Years of experience', value: '10+ Years of Clinical Practice' },
-    { label: 'Clinical areas of expertise', value: 'Adult & General Psychiatry' },
-    { label: 'Languages spoken', value: 'English, Hindi, Punjabi' },
-    { label: 'Consultation availability', value: 'Mon – Sat: 10:00 AM – 5:00 PM (By Appointment)' },
+    { label: 'Medical Qualifications', value: 'MD Psychiatry' },
+    { label: 'Academic Background', value: 'Former Assistant Professor' },
+    { label: 'Years of Experience', value: '10 Years Clinical Experience' },
+    { label: 'Special Interests', value: 'Cognitive Optimization & Resilience' },
+    { label: 'Family Legacy', value: 'Father: Dr. Ashok (Surgeon), Mother: General Doctor' },
+    { label: 'Consultation Availability', value: 'Mon – Sat: 10:00 AM – 5:00 PM (By Appointment)' },
   ],
 };
 

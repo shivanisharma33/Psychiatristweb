@@ -3,9 +3,9 @@
  */
 export const aboutContent = {
   meta: {
-    title: 'About Us | Dr. Abhinav & Ashok Hospital, Garhshankar',
+    title: 'About Us | Dr. Abhinav Dhami & Ashok Hospital, Garhshankar',
     description:
-      'Learn about Dr. Abhinav, Consultant Psychiatrist (MBBS, MD), and the distinguished family medical heritage of Ashok Hospital in Garhshankar, Punjab.',
+      'Learn about Dr. Abhinav Dhami, MD Psychiatry, and the distinguished family medical heritage of Ashok Hospital in Garhshankar, Punjab.',
   },
   intro: {
     blob: `Why isn't it normal to talk about how you feel?`,
@@ -30,17 +30,17 @@ export const aboutContent = {
   },
   marquee: 'End The Stigma',
   founder: {
-    title: "About Dr. Abhinav & Ashok Hospital",
+    title: "About Dr. Abhinav Dhami & Ashok Hospital",
     paragraphs: [
-      'Born into a respected medical family in Garhshankar, Dr. Abhinav was inspired by his father, Dr. Ashok, a veteran surgeon who founded Ashok Hospital, and his mother, a dedicated general doctor.',
-      'Recognizing that emotional and psychological wellness often went unaddressed while physical illnesses were treated with urgency, Dr. Abhinav pursued MBBS and MD (Psychiatry) to establish modern, evidence-based psychiatric care at Ashok Hospital.',
-      'Our practice is built on trust, medical rigor, and unwavering empathy — ensuring every patient receives confidential, compassionate, and stigma-free care.',
+      'Dr. Abhinav Dhami is a psychiatrist with 10 years of clinical experience in mental health and psychiatry. Having previously served as an Assistant Professor, he brings clinical experience and a commitment to evidence-based psychiatric care.',
+      'His approach combines evidence-based treatment, compassionate care and a deeper understanding of the complexities of the human mind. Beyond the treatment of psychiatric disorders, he is also interested in cognitive optimization, emotional resilience and enhancing overall psychological performance.',
+      'Dr. Dhami believes in helping individuals not only overcome mental health challenges, but also develop greater clarity, emotional balance, resilience and the mental capacity to navigate life more effectively. His approach emphasizes personalized care, scientific evidence and a judgement-free environment where patients feel heard and understood.',
     ],
-    signature: '— Dr. Abhinav, MBBS, MD (Psychiatry)',
+    signature: '— Dr. Abhinav Dhami, MD Psychiatry',
     image: {
       src: 'about-founder-letter',
       alt: 'Ashok Hospital Medical Heritage',
-      hint: 'Dr. Abhinav · Ashok Hospital',
+      hint: 'Dr. Abhinav Dhami · Ashok Hospital',
       position: '50% 50%',
     },
   },
@@ -70,10 +70,10 @@ export const aboutContent = {
         bio: 'Respected general doctor who provided compassionate primary medical care to thousands of local families across generations.',
       },
       son: {
-        name: 'Dr. Abhinav',
-        role: 'Consultant Psychiatrist',
-        qualifications: 'MBBS, MD (Psychiatry)',
-        bio: 'Carrying forward the family legacy by bringing modern, evidence-based psychiatric therapies and stigma-free mental health care to Ashok Hospital.',
+        name: 'Dr. Abhinav Dhami',
+        role: 'Psychiatrist & Consultant',
+        qualifications: 'MD Psychiatry',
+        bio: 'Dr. Abhinav Dhami is a psychiatrist with 10 years of clinical experience in mental health and psychiatry. Having previously served as an Assistant Professor, he brings clinical experience and a commitment to evidence-based psychiatric care.',
       },
     },
   },

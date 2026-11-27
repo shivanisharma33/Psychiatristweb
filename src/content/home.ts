@@ -1,9 +1,9 @@
 /** Home page copy & image slots. Replace with your own content. */
 export const homeContent = {
   meta: {
-    title: 'Consultant Psychiatrist',
+    title: 'Dr. Abhinav Dhami | MD Psychiatry',
     description:
-      'Judgement-free psychiatric care, evaluation, and therapy by Dr. Abhinav (MBBS, MD Psychiatry) at Ashok Hospital, Garhshankar, Punjab.',
+      'Judgement-free psychiatric care, evaluation, and therapy by Dr. Abhinav Dhami (MD Psychiatry) at Ashok Hospital, Garhshankar, Punjab.',
   },
   hero: {
     titleLine: 'Modern mental healthcare for',
@@ -53,8 +53,8 @@ export const homeContent = {
     ] as const,
   },
   team: {
-    title: 'Meet Dr. Abhinav',
-    subtitle: 'Consultant Psychiatrist at Ashok Hospital, Garhshankar',
+    title: 'Meet Dr. Abhinav Dhami',
+    subtitle: 'MD Psychiatry · Psychiatrist & Former Assistant Professor at Ashok Hospital',
     cta: 'About Doctor',
   },
   community: {

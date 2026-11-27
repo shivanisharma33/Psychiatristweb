@@ -63,7 +63,7 @@ export function Wordmark({
           className={cn(
             'font-bold tracking-[-0.015em]',
             inverted ? 'text-white' : 'text-ink',
-            isSm ? 'text-[19px]' : 'text-[24px]'
+            isSm ? 'text-[16px] sm:text-[19px]' : 'text-[21px] sm:text-[24px]'
           )}
         >
           {brand.nameBold}

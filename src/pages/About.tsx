@@ -29,8 +29,8 @@ export default function About() {
   return (
     <>
       <Seo
-        title="About Us | Dr. Abhinav & Ashok Hospital, Garhshankar"
-        description="Learn about Dr. Abhinav, Consultant Psychiatrist (MBBS, MD), and the distinguished family medical heritage of Ashok Hospital in Garhshankar, Punjab."
+        title="About Us | Dr. Abhinav Dhami & Ashok Hospital, Garhshankar"
+        description="Learn about Dr. Abhinav Dhami, MD Psychiatry, and the distinguished family medical heritage of Ashok Hospital in Garhshankar, Punjab."
       />
 
       {/* ── 1. WARM EDITORIAL HERO SECTION ── */}
@@ -63,7 +63,7 @@ export default function About() {
 
             {/* Subheading */}
             <p className="mt-[14px] max-w-[820px] text-[15.5px] leading-[24px] text-white/95 sm:text-[18px] sm:leading-[28px] md:text-[20px] md:leading-[32px]">
-              Rooted in a family tradition of surgical and primary healthcare, Ashok Hospital has served families across Punjab for decades. Today, <strong>Dr. Abhinav (MBBS, MD Psychiatry)</strong> advances this noble mission — bringing modern, compassionate, and stigma-free psychiatric care to everyone who walks through our doors.
+              Rooted in a family tradition of surgical and primary healthcare, Ashok Hospital has served families across Punjab for decades. Today, <strong>Dr. Abhinav Dhami (MD Psychiatry)</strong> advances this noble mission — bringing modern, compassionate, and evidence-based psychiatric care to everyone who walks through our doors.
             </p>
 
             {/* Quick Hero Trust Bar */}
@@ -116,11 +116,12 @@ export default function About() {
         <Marquee
           items={[
             'Ashok Hospital Garhshankar',
-            'Dr. Abhinav · MBBS, MD Psychiatry',
+            'Dr. Abhinav Dhami | MD Psychiatry',
+            'Former Assistant Professor',
             'Dr. Ashok · Senior Surgeon',
             'Mother · General Doctor',
-            'Decades of Trusted Medical Care',
-            'End The Stigma',
+            '10 Years Clinical Experience',
+            'Cognitive Optimization & Resilience',
             'Safe & Confidential Space',
           ]}
           speed={24}
@@ -140,7 +141,7 @@ export default function About() {
               Three Pillars of Care Under One Roof
             </h2>
             <p className="mt-3 text-[15px] leading-[24px] text-ink/75 sm:text-[17px] sm:leading-[27px]">
-              Medicine was not simply a career path for Dr. Abhinav — it was the atmosphere he grew up in. Ashok Hospital stands today as a testament to surgical skill, compassionate family practice, and modern psychiatric healing.
+              Medicine was not simply a career path for Dr. Abhinav Dhami — it was the atmosphere he grew up in. Ashok Hospital stands today as a testament to surgical skill, compassionate family practice, and modern psychiatric healing.
             </p>
           </Reveal>
 
@@ -200,7 +201,7 @@ export default function About() {
                   </p>
 
                   <p className="mt-3 text-[14.5px] leading-[23px] text-ink/75 sm:text-[15.5px] sm:leading-[25px]">
-                    Dedicated to primary family healthcare, Dr. Abhinav&apos;s mother has tended to thousands of households with warmth, holistic diagnostics, and maternal compassion. Her presence instilled an understanding that medicine is about caring for the whole person, not just a symptom.
+                    Dedicated to primary family healthcare, Dr. Abhinav Dhami&apos;s mother has tended to thousands of households with warmth, holistic diagnostics, and maternal compassion. Her presence instilled an understanding that medicine is about caring for the whole person, not just a symptom.
                   </p>
                 </div>
 
@@ -212,34 +213,37 @@ export default function About() {
               </div>
             </Reveal>
 
-            {/* 3. Dr. Abhinav (Psychiatrist) */}
+            {/* 3. Dr. Abhinav Dhami (Psychiatrist) */}
             <Reveal delay={0.3}>
               <div className="group flex h-full flex-col justify-between rounded-[22px] border-2 border-accent/25 bg-gradient-to-b from-[#fffbf8] to-white p-[24px] shadow-[0_10px_30px_rgba(255,88,38,0.08)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_18px_45px_rgba(255,88,38,0.14)] sm:rounded-[26px] sm:p-[32px]">
                 <div>
                   <div className="flex items-center justify-between">
-                    <span className="flex size-12 items-center justify-center rounded-xl bg-accent text-white shadow-md sm:size-14 sm:rounded-2xl">
-                      <Sparkles className="size-6 sm:size-7" />
-                    </span>
+                    <div className="size-13 overflow-hidden rounded-2xl border-2 border-accent/40 shadow-sm transition-transform duration-300 group-hover:scale-105 sm:size-14">
+                      <SmartImage
+                        slot={doctor.photo}
+                        sizes="56px"
+                      />
+                    </div>
                     <span className="rounded-full bg-accent/15 px-2.5 py-1 text-[11px] font-bold uppercase tracking-wider text-accent">
                       Modern Psychiatry
                     </span>
                   </div>
 
                   <h3 className="mt-5 font-serif text-[23px] leading-[30px] text-ink sm:text-[26px] sm:leading-[32px]">
-                    Dr. Abhinav
+                    Dr. Abhinav Dhami
                   </h3>
                   <p className="mt-1 text-[14px] font-semibold text-accent sm:text-[15px]">
-                    Son · MBBS, MD (Psychiatry) · Consultant
+                    Son · MD Psychiatry · Former Assistant Professor
                   </p>
 
                   <p className="mt-3 text-[14.5px] leading-[23px] text-ink/75 sm:text-[15.5px] sm:leading-[25px]">
-                    Seeing physical recovery all around him, Dr. Abhinav noticed that emotional struggles and psychiatric conditions were left unspoken. By specializing in Psychiatry (MD), he expanded Ashok Hospital into a safe haven where mental health is treated with clinical rigour and zero stigma.
+                    Dr. Abhinav Dhami is a psychiatrist with 10 years of clinical experience in mental health and psychiatry. Having previously served as an Assistant Professor, he brings clinical experience and a commitment to evidence-based psychiatric care.
                   </p>
                 </div>
 
                 <div className="mt-5 border-t border-black/5 pt-3.5">
                   <span className="text-[12.5px] font-medium text-accent">
-                    Mission: De-stigmatising mental illness in Punjab
+                    Mission: Evidence-based care &amp; cognitive optimization
                   </span>
                 </div>
               </div>
@@ -257,7 +261,7 @@ export default function About() {
                 <div className="mt-4 flex flex-wrap items-center gap-2 sm:gap-3">
                   <div className="size-2 rounded-full bg-accent" />
                   <span className="font-sans text-[14px] font-semibold tracking-wide text-white sm:text-[15px]">
-                    Dr. Abhinav, MBBS, MD (Psychiatry)
+                    Dr. Abhinav Dhami, MD Psychiatry
                   </span>
                   <span className="text-[13px] text-white/60 sm:text-[14px]">· Ashok Hospital, Garhshankar</span>
                 </div>
@@ -281,28 +285,27 @@ export default function About() {
                   <div className="relative mx-auto size-[180px] overflow-hidden rounded-full border-4 border-sand-light shadow-md sm:size-[220px]">
                     <SmartImage
                       slot={doctor.photo}
-                      tone="grey"
-                      className="grayscale transition-transform duration-700 hover:scale-105"
+                      className="transition-transform duration-700 hover:scale-105"
                       sizes="220px"
                     />
                   </div>
 
                   <div className="mt-5 text-center">
                     <h3 className="font-serif text-[26px] font-semibold text-ink sm:text-[30px]">
-                      Dr. Abhinav
+                      Dr. Abhinav Dhami
                     </h3>
                     <p className="mt-1 text-[15px] font-semibold text-accent sm:text-[16px]">
-                      MBBS, MD (Psychiatry)
+                      MD Psychiatry
                     </p>
                     <p className="mt-0.5 text-[13.5px] text-ink/65">
-                      Consultant Psychiatrist · Ashok Hospital
+                      Psychiatrist &amp; Former Assistant Professor · Ashok Hospital
                     </p>
                   </div>
 
                   <div className="mt-5 grid grid-cols-2 gap-2 border-y border-black/5 py-4 text-center">
                     <div>
-                      <span className="block font-serif text-[24px] font-bold text-ink sm:text-[28px]">10+</span>
-                      <span className="text-[11px] uppercase tracking-wider text-ink/60 sm:text-[12px]">Years Experience</span>
+                      <span className="block font-serif text-[24px] font-bold text-ink sm:text-[28px]">10</span>
+                      <span className="text-[11px] uppercase tracking-wider text-ink/60 sm:text-[12px]">Years Clinical Exp.</span>
                     </div>
                     <div>
                       <span className="block font-serif text-[24px] font-bold text-accent sm:text-[28px]">100%</span>
@@ -313,19 +316,19 @@ export default function About() {
                   <div className="mt-5 space-y-2 text-[13.5px] text-ink/80 sm:text-[14px]">
                     <div className="flex items-center gap-2">
                       <CheckCircle2 className="size-4 shrink-0 text-accent" />
-                      <span>Depression, Anxiety &amp; Panic Disorders</span>
+                      <span>Evidence-Based Psychiatric Treatment</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <CheckCircle2 className="size-4 shrink-0 text-accent" />
-                      <span>Bipolar Disorder &amp; Mood Health</span>
+                      <span>Cognitive Optimization &amp; Resilience</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <CheckCircle2 className="size-4 shrink-0 text-accent" />
-                      <span>ADHD &amp; Neurodevelopmental Evaluations</span>
+                      <span>Depression, Anxiety &amp; Mood Health</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <CheckCircle2 className="size-4 shrink-0 text-accent" />
-                      <span>OCD, Sleep Issues &amp; Stress Management</span>
+                      <span>ADHD, OCD &amp; Psychological Performance</span>
                     </div>
                   </div>
 
@@ -335,7 +338,7 @@ export default function About() {
                       to="/contact?topic=booking#contact-form"
                       className="w-full justify-center !border-accent !bg-accent text-white hover:!bg-[#e94a1b]"
                     >
-                      Book Consultation with Dr. Abhinav
+                      Book Consultation with Dr. Abhinav Dhami
                     </Button>
                   </div>
                 </div>
@@ -379,6 +382,19 @@ export default function About() {
                         18 Google reviews
                       </span>
                     </div>
+                  </div>
+
+                  {/* Doctor Bio Highlight */}
+                  <div className="mt-5 space-y-3 rounded-2xl bg-[#faf8f5] p-4 text-[14px] leading-[23px] text-ink/80 border border-black/5 sm:p-5 sm:text-[15px] sm:leading-[25px]">
+                    <p>
+                      <strong>Dr. Abhinav Dhami</strong> is a psychiatrist with 10 years of clinical experience in mental health and psychiatry. Having previously served as an Assistant Professor, he brings clinical experience and a commitment to evidence-based psychiatric care.
+                    </p>
+                    <p>
+                      His approach combines evidence-based treatment, compassionate care and a deeper understanding of the complexities of the human mind. Beyond the treatment of psychiatric disorders, he is also interested in cognitive optimization, emotional resilience and enhancing overall psychological performance.
+                    </p>
+                    <p>
+                      Dr. Dhami believes in helping individuals not only overcome mental health challenges, but also develop greater clarity, emotional balance, resilience and the mental capacity to navigate life more effectively. His approach emphasizes personalized care, scientific evidence and a judgement-free environment where patients feel heard and understood.
+                    </p>
                   </div>
 
                   {/* Contact & Location Details */}
@@ -484,7 +500,7 @@ export default function About() {
                     </a>
 
                     <a
-                      href={`https://wa.me/${contact.whatsapp}?text=${encodeURIComponent('Hello Dr. Abhinav, I would like to enquire about an appointment at Ashok Hospital.')}`}
+                      href={`https://wa.me/${contact.whatsapp}?text=${encodeURIComponent('Hello Dr. Abhinav Dhami, I would like to enquire about an appointment at Ashok Hospital.')}`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex h-[44px] w-full items-center justify-center gap-2 rounded-full border border-emerald-500/30 bg-emerald-50 px-5 text-[14px] font-semibold text-emerald-700 transition-colors hover:bg-emerald-100 sm:w-auto"
@@ -531,7 +547,7 @@ export default function About() {
               {
                 icon: Stethoscope,
                 title: 'Dual Medical & Therapeutic Approach',
-                desc: 'As an MD Psychiatrist, Dr. Abhinav examines both brain biochemistry and life stressors — prescribing medication only when truly beneficial.',
+                desc: 'As an MD Psychiatrist, Dr. Abhinav Dhami examines both brain biochemistry and life stressors — prescribing medication only when truly beneficial.',
               },
               {
                 icon: Users2,
@@ -592,7 +608,7 @@ export default function About() {
               {
                 step: '02',
                 title: 'Comfortable Evaluation',
-                desc: 'A relaxed, confidential 40–50 minute conversation with Dr. Abhinav. Speak openly about what you are going through.',
+                desc: 'A relaxed, confidential 40–50 minute conversation with Dr. Abhinav Dhami. Speak openly about what you are going through.',
               },
               {
                 step: '03',
@@ -640,7 +656,7 @@ export default function About() {
             </h2>
 
             <p className="mx-auto mt-3.5 max-w-[680px] text-[15.5px] leading-[25px] text-white/95 sm:text-[18px] sm:leading-[28px] md:text-[19px] md:leading-[29px]">
-              Consult Dr. Abhinav at Ashok Hospital, Garhshankar. Reaching out is completely private, compassionate, and judgement-free.
+              Consult Dr. Abhinav Dhami at Ashok Hospital, Garhshankar. Reaching out is completely private, compassionate, and judgement-free.
             </p>
 
             <div className="mt-7 flex flex-col items-center justify-center gap-3 sm:flex-row sm:flex-wrap sm:gap-4">
@@ -653,7 +669,7 @@ export default function About() {
               </Button>
 
               <a
-                href={`https://wa.me/${contact.whatsapp}?text=${encodeURIComponent('Hello Dr. Abhinav, I would like to book a consultation at Ashok Hospital.')}`}
+                href={`https://wa.me/${contact.whatsapp}?text=${encodeURIComponent('Hello Dr. Abhinav Dhami, I would like to book a consultation at Ashok Hospital.')}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex h-[48px] w-full items-center justify-center gap-2 rounded-full border border-white/50 bg-white/10 px-6 text-[15px] font-medium text-white backdrop-blur-md transition-all hover:bg-white/20 sm:w-auto"

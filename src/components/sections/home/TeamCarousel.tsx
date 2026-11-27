@@ -25,30 +25,48 @@ export function TeamCarousel() {
         </Reveal>
 
         <Reveal delay={0.1}>
-          <div className="mx-auto mt-[48px] max-w-[960px] overflow-hidden rounded-[28px] bg-white shadow-[0_8px_40px_rgba(0,0,0,0.06)] max-md:mt-[32px]">
-            <div className="grid md:grid-cols-[280px_1fr] lg:grid-cols-[320px_1fr]">
+          <div className="mx-auto mt-[48px] max-w-[1140px] overflow-hidden rounded-[28px] bg-white shadow-[0_8px_40px_rgba(0,0,0,0.06)] max-md:mt-[32px]">
+            <div className="grid md:grid-cols-[420px_1fr] lg:grid-cols-[480px_1fr] items-stretch">
               {/* Photo */}
-              <div className="group relative aspect-square overflow-hidden md:aspect-auto md:min-h-[440px]">
-                <div className="h-full w-full transition-transform duration-700 group-hover:scale-[1.04]">
+              <div className="group relative aspect-[3/4] overflow-hidden bg-[#faf8f5] md:aspect-auto md:min-h-[520px]">
+                <div className="h-full w-full transition-transform duration-700 group-hover:scale-[1.02]">
                   <SmartImage
                     slot={doctor.photo}
-                    tone="grey"
-                    className="grayscale-[0.4] transition-[filter] duration-700 group-hover:grayscale-0"
-                    sizes="(min-width: 768px) 320px, 100vw"
+                    className="h-full w-full"
+                    imgClassName="!object-top !object-cover"
+                    sizes="(min-width: 1024px) 480px, (min-width: 768px) 420px, 100vw"
                   />
                 </div>
                 {/* Gradient overlay at bottom on mobile */}
-                <div className="pointer-events-none absolute inset-x-0 bottom-0 h-[80px] bg-gradient-to-t from-white to-transparent md:hidden" aria-hidden />
+                <div className="pointer-events-none absolute inset-x-0 bottom-0 h-[60px] bg-gradient-to-t from-white to-transparent md:hidden" aria-hidden />
               </div>
 
               {/* Info */}
-              <div className="flex flex-col justify-center px-[36px] py-[40px] max-md:px-[24px] max-md:py-[28px]">
-                <p className="text-[14px] font-semibold uppercase tracking-widest text-accent">{doctor.role}</p>
-                <h3 className="mt-[8px] font-serif text-[38px] leading-[46px] tracking-[-0.02em] text-ink max-md:text-[30px] max-md:leading-[36px]">
+              <div className="flex flex-col justify-center px-[32px] py-[36px] sm:px-[40px] sm:py-[42px] max-md:px-[22px] max-md:py-[26px]">
+                <div className="flex flex-wrap items-center gap-2">
+                  <span className="rounded-full bg-accent/10 px-3 py-1 text-[12px] font-bold uppercase tracking-wider text-accent">
+                    {doctor.credentials}
+                  </span>
+                  <span className="text-[13px] font-semibold uppercase tracking-wider text-ink/60">
+                    {doctor.role}
+                  </span>
+                </div>
+
+                <h3 className="mt-[10px] font-serif text-[36px] leading-[44px] tracking-[-0.02em] text-ink sm:text-[40px] sm:leading-[48px]">
                   {doctor.name}
                 </h3>
-                <p className="mt-[4px] text-[16px] leading-[22px] text-ink/50">{doctor.location}</p>
-                <p className="mt-[16px] max-w-[440px] text-[17px] leading-[26px] text-ink/60">{doctor.bio}</p>
+                <p className="mt-[4px] text-[15px] font-medium leading-[22px] text-ink/60">{doctor.location}</p>
+
+                {/* Bio Paragraphs */}
+                <div className="mt-[18px] space-y-3 text-[15.5px] leading-[26px] text-ink/75 sm:text-[16px]">
+                  {doctor.bioParagraphs ? (
+                    doctor.bioParagraphs.map((para, i) => (
+                      <p key={i}>{para}</p>
+                    ))
+                  ) : (
+                    <p>{doctor.bio}</p>
+                  )}
+                </div>
 
                 {/* Detail chips */}
                 <dl className="mt-[28px] grid gap-[14px] sm:grid-cols-2">

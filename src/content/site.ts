@@ -9,14 +9,14 @@ import type { NavItem, SocialLink } from '@/types';
 
 export const brand = {
   /** Wordmark is rendered as two parts: bold + light (mirrors the reference logo). */
-  nameBold: 'Dr. Abhinav',
+  nameBold: 'Dr. Abhinav Dhami',
   nameLight: '',
   subtitle: 'ASHOK HOSPITAL',
   /** Legal entity shown in the footer copyright line. */
   legalName: 'Ashok Hospital, Garhshankar',
   tagline: 'Professional Psychiatric Care in Garhshankar, Punjab',
   /** Used in <title> tags. */
-  siteTitle: 'Dr. Abhinav | Psychiatrist at Ashok Hospital',
+  siteTitle: 'Dr. Abhinav Dhami | MD Psychiatry — Ashok Hospital',
   /** Optional: path to an SVG/PNG logo in /public. When set it replaces the text wordmark. */
   logoSrc: '',
 };
@@ -68,7 +68,7 @@ export const mainNav: NavItem[] = [
     to: '/about',
     children: [
       { label: 'Our Story', to: '/about' },
-      { label: 'Dr. Abhinav', to: '/about#about-doctor' },
+      { label: 'Dr. Abhinav Dhami', to: '/about#about-doctor' },
       { label: 'How It Works', to: '/#how-it-works' },
     ],
   },
@@ -94,7 +94,7 @@ export const footerColumns: { title: string; links: { label: string; to: string;
     links: [
       { label: 'How It Works', to: '/#how-it-works' },
       { label: 'About Us', to: '/about' },
-      { label: 'Dr. Abhinav', to: '/about#about-doctor' },
+      { label: 'Dr. Abhinav Dhami', to: '/about#about-doctor' },
       { label: 'Testimonials', to: '/services#testimonials' },
       { label: 'FAQs', to: '/services#faq' },
     ],

@@ -9,13 +9,13 @@ export function Seo({ title, description }: { title: string; description: string
       <meta name="description" content={description} />
       <meta property="og:title" content={full} />
       <meta property="og:description" content={description} />
-      <meta property="og:site_name" content="Dr. Abhinav — Ashok Hospital" />
+      <meta property="og:site_name" content="Dr. Abhinav Dhami — Ashok Hospital" />
       <meta property="og:type" content="website" />
-      <meta property="og:image" content="/images/photos/home-hero-session-800.jpg" />
+      <meta property="og:image" content="/images/photos/dr-abhinav-dhami-763.jpg" />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={full} />
       <meta name="twitter:description" content={description} />
-      <meta name="twitter:image" content="/images/photos/home-hero-session-800.jpg" />
+      <meta name="twitter:image" content="/images/photos/dr-abhinav-dhami-763.jpg" />
     </>
   );
 }
