@@ -22,15 +22,17 @@ export const brand = {
 };
 
 export const contact = {
-  email: 'hello@yourpractice.com', // TODO
-  phoneDisplay: '+91 00000 00000', // TODO
-  phoneE164: '+910000000000', // TODO (digits only, with country code)
-  /** WhatsApp number in international format without "+" or spaces. Leave empty to hide WhatsApp UI. */
-  whatsapp: '910000000000', // TODO
+  email: 'care@ashokhospital.in',
+  phoneDisplay: '+91 99968 42994',
+  phoneE164: '+919996842994',
+  hospitalPhoneDisplay: '+91 98140 73717',
+  hospitalPhoneE164: '+919814073717',
+  /** WhatsApp number in international format without "+" or spaces. */
+  whatsapp: '919996842994',
   whatsappReplyTime: 'Typically replies in 3 mins',
-  address: ['Clinic address line 1', 'City, State PIN'], // TODO
-  hours: ['Mon – Sat: 9:00 am – 8:00 pm', 'Sunday: closed'], // TODO
-  mapUrl: '', // TODO optional Google Maps link
+  address: ['Ashok Hospital, Near Civil Hospital', 'Garhshankar, Punjab 144527, India'],
+  hours: ['Mon – Sat: 10:00 am – 5:00 pm (By Appointment)', 'Sunday: closed'],
+  mapUrl: 'https://www.google.com/maps/search/?api=1&query=Ashok+Hospital+Near+Civil+Hospital+Garhshankar+Punjab+144527',
 };
 
 export const socials: SocialLink[] = [

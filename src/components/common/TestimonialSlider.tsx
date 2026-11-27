@@ -41,7 +41,7 @@ export function TestimonialSlider({
         <span className={cn('hidden h-px flex-1 md:block', tone === 'light' ? 'bg-[#d9a08b]' : 'bg-[#a34b33]')} aria-hidden />
       </div>
 
-      <div className="relative mx-auto mt-[60px] max-w-[1440px] max-md:mt-[40px]">
+      <div className="relative mx-auto mt-[32px] max-w-[1440px] max-md:mt-[24px]">
         {showArrows && (
           <>
             <button

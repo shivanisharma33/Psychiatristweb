@@ -46,15 +46,15 @@ export function HomeHero() {
       <div className="pointer-events-none absolute -left-[200px] -top-[100px] size-[500px] rounded-full bg-white/10 blur-[120px]" aria-hidden />
       <div className="pointer-events-none absolute -right-[150px] bottom-[100px] size-[400px] rounded-full bg-[#ff5826]/10 blur-[100px]" aria-hidden />
 
-      <div className="mx-auto max-w-[1440px] px-[20px] pt-[60px] md:px-[60px] lg:px-[143px] lg:pt-[108px]">
-        <div className="grid items-start gap-[60px] xl:grid-cols-[464px_1fr] xl:gap-[134px]">
+      <div className="mx-auto max-w-[1440px] px-[20px] pt-[40px] md:px-[60px] lg:px-[143px] lg:pt-[64px]">
+        <div className="grid items-start gap-[36px] xl:grid-cols-[464px_1fr] xl:gap-[60px]">
           <Reveal y={40} className="max-xl:mx-auto max-xl:max-w-[560px] max-xl:w-full max-md:text-center">
             <h1 id="home-hero-title" className="font-serif text-[57.4px] leading-[68.88px] tracking-[-0.02em] text-ink max-md:text-[44px] max-md:leading-[52px]">
               {hero.titleLine}
               <RotatingScript words={hero.rotatingWords} />
             </h1>
-            <p className="mt-[30px] text-[19.6px] leading-[27px] text-ink/60 max-md:text-[17px] max-md:leading-[24px]">{hero.body}</p>
-            <EmailCapture variant="hero" placeholder={hero.emailPlaceholder} cta={hero.cta} source="home-hero" className="mt-[47px]" />
+            <p className="mt-[20px] text-[19.6px] leading-[27px] text-ink/60 max-md:text-[17px] max-md:leading-[24px]">{hero.body}</p>
+            <EmailCapture variant="hero" placeholder={hero.emailPlaceholder} cta={hero.cta} source="home-hero" className="mt-[24px]" />
           </Reveal>
 
           {/* Photo collage with enhanced animations */}
@@ -86,7 +86,7 @@ export function HomeHero() {
           </div>
         </div>
 
-        <div className="pb-[54px] pt-[176px] max-xl:pt-[110px] max-md:pt-[90px]">
+        <div className="pb-[40px] pt-[44px] max-xl:pt-[36px] max-md:pb-[28px] max-md:pt-[28px]">
           <TestimonialSlider items={testimonials} title="We Heard You" tone="onGradient" showArrows={false} />
         </div>
       </div>

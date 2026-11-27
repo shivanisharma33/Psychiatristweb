@@ -44,16 +44,20 @@ const portrait = (n: number) => ({ src: `/images/illustrations/team-${n}.svg`, a
 export const doctor = {
   name: 'Dr. Abhinav',
   credentials: 'MBBS, MD (Psychiatry)',
-  role: 'Psychiatrist',
-  location: 'Ashok Hospital, Garhshankar, Punjab',
-  bio: 'Professional psychiatric guidance begins with understanding individual experiences and discussing appropriate care options.',
+  role: 'Consultant Psychiatrist',
+  location: 'Ashok Hospital, Near Civil Hospital, Garhshankar, Punjab 144527',
+  phone: '+91 99968 42994',
+  hospitalPhone: '+91 98140 73717',
+  fatherInfo: 'Son of Dr. Ashok (Senior Surgeon) & Mother (General Practitioner)',
+  bio: 'Born into a dedicated family of healthcare professionals — with his father, Dr. Ashok, an accomplished senior surgeon, and his mother, an esteemed general physician — Dr. Abhinav brings a legacy of clinical excellence and warmth to psychiatric care at Ashok Hospital.',
   photo: portrait(1),
   details: [
     { label: 'Medical qualifications', value: 'MBBS, MD (Psychiatry)' },
+    { label: 'Family legacy', value: 'Father: Dr. Ashok (Surgeon), Mother: General Doctor' },
     { label: 'Years of experience', value: '10+ Years of Clinical Practice' },
     { label: 'Clinical areas of expertise', value: 'Adult & General Psychiatry' },
     { label: 'Languages spoken', value: 'English, Hindi, Punjabi' },
-    { label: 'Consultation availability', value: 'Mon – Sat (By Appointment)' },
+    { label: 'Consultation availability', value: 'Mon – Sat: 10:00 AM – 5:00 PM (By Appointment)' },
   ],
 };
 
