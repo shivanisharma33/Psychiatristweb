@@ -1,0 +1,37 @@
+/*
+ * Typefaces from reference (rockethealth.app):
+ *   - Canela (Commercial Type)        -> big headings (font-serif)
+ *   - Founders Grotesk (Klim Type)    -> body / UI (font-sans)
+ */
+
+@font-face {
+  font-family: 'Canela';
+  src: url('../assets/fonts/Canela-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Founders Grotesk';
+  src: url('../assets/fonts/FoundersGrotesk-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Founders Grotesk';
+  src: url('../assets/fonts/FoundersGrotesk-Semibold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Founders Grotesk';
+  src: url('../assets/fonts/FoundersGrotesk-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}

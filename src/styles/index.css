@@ -1,0 +1,139 @@
+@import 'tailwindcss';
+@import './fonts.css';
+
+/*
+ * Design tokens taken from the reference site (rockethealth.app) computed styles.
+ * Display serif = Canela (commercial) -> Newsreader substitute (width within ~3%).
+ * Sans          = Founders Grotesk (commercial) -> Familjen Grotesk substitute (+ -0.02em tracking).
+ * If you license the originals, add @font-face rules in fonts.css; they are
+ * listed first in each stack and will be picked up automatically.
+ */
+@theme {
+  --font-serif: 'Canela', 'Newsreader', Georgia, serif;
+  --font-sans: 'Founders Grotesk', 'Familjen Grotesk', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-script: 'Sacramento', cursive;
+
+  --color-ink: #000000;
+  --color-ink-900: #0d0d0d;
+  --color-ink-800: #151515;
+  --color-ink-700: #1b1b1b;
+  --color-ink-600: #1e1e1e;
+  --color-ink-500: #333333;
+  --color-slate-faq: #485166;
+  --color-muted: #a1a1aa;
+
+  --color-accent: #ff5826;
+  --color-peach-from: #ff7f60;
+  --color-peach-to: #fea875;
+  --color-peach-card: #f5ad8e;
+  --color-hero-input-border: #d07554;
+  --color-kicker: #857bc3;
+
+  --color-featured: #f0f0f0;
+  --color-howitworks: #e7effc;
+  --color-team: #f7f1f1;
+  --color-support-from: #ca8483;
+  --color-pink-from: #f3697a;
+  --color-pink-to: #f2898b;
+  --color-sand: #e9dccb;
+  --color-sand-light: #ebe3d9;
+  --color-cream: #fff4e5;
+  --color-faq-btn: #f3f3f3;
+  --color-faq-line: #e6e6e6;
+  --color-whatsapp: #18181b;
+  --color-whatsapp-green: #4fce5d;
+  --color-about-blue: #000edd;
+  --color-blob: #dccfcb;
+
+  /* Breakpoints follow the reference (Webflow: 479 / 767 / 991). Declared in ascending
+     order — Tailwind emits media queries in declaration order. */
+  --breakpoint-*: initial;
+  --breakpoint-xs: 480px;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+
+  --animate-gradient-y: gradient-y 4.8s ease-in-out infinite alternate;
+  --animate-marquee: marquee 28s linear infinite;
+
+  @keyframes gradient-y {
+    0% { background-position: 50% 0%; }
+    100% { background-position: 50% 100%; }
+  }
+  @keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-white font-sans text-ink antialiased;
+    font-size: 16px;
+    line-height: 20px;
+    /* Familjen Grotesk sets ~6% wider than Founders Grotesk; tighten to match line lengths. */
+    letter-spacing: -0.02em;
+    overflow-x: clip;
+  }
+  img {
+    max-width: 100%;
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 3px;
+  }
+  [id] {
+    scroll-margin-top: 96px;
+  }
+}
+
+@layer components {
+  /* Animated warm gradient that replaces the reference's gradient GIF background. */
+  .bg-peach-animated {
+    background-image: linear-gradient(180deg, #fea875 0%, #fe9c6f 25%, #ff7f60 50%, #fe9c6f 75%, #fea875 100%);
+    background-size: 100% 300%;
+    animation: var(--animate-gradient-y);
+  }
+  .bg-pink-gradient {
+    background-image: linear-gradient(170deg, var(--color-pink-from) 0%, var(--color-pink-to) 100%);
+  }
+  .bg-pink-gradient-x {
+    background-image: linear-gradient(100deg, var(--color-pink-to) 0%, var(--color-pink-from) 100%);
+  }
+  .bg-support-gradient {
+    background-image: linear-gradient(180deg, var(--color-support-from) 0%, #f97d63 85%),
+      linear-gradient(90deg, #f97d63, #f89d73);
+  }
+  .text-balance {
+    text-wrap: balance;
+  }
+  /* Active navbar link: thin accent underline under the label. */
+  .nav-active::after {
+    content: '';
+    position: absolute;
+    left: 16px;
+    right: 6px;
+    bottom: 6px;
+    height: 1.5px;
+    background: var(--color-accent);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}

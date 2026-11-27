@@ -1,0 +1,7 @@
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Mark">
+<path d="M0 12C0 5.37258 5.37258 0 12 0H28C34.6274 0 40 5.37258 40 12V28C40 34.6274 34.6274 40 28 40H12C5.37258 40 0 34.6274 0 28V12Z" fill="white"/>
+<circle id="Voice A" cx="16" cy="20" r="9" fill="#6553A3"/>
+<circle id="Voice B" cx="24" cy="20" r="9" fill="#A89BD6"/>
+</g>
+</svg>
