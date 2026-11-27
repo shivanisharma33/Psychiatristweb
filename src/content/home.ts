@@ -1,9 +1,9 @@
 /** Home page copy & image slots. Replace with your own content. */
 export const homeContent = {
   meta: {
-    title: 'Online & In-Person Therapy',
+    title: 'Consultant Psychiatrist',
     description:
-      'Judgement-free psychological care: therapy, psychiatry and support groups with qualified mental health professionals.',
+      'Judgement-free psychiatric care, evaluation, and therapy by Dr. Abhinav (MBBS, MD Psychiatry) at Ashok Hospital, Garhshankar, Punjab.',
   },
   hero: {
     titleLine: 'Modern mental healthcare for',
